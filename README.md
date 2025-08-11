@@ -19,75 +19,52 @@
 
 ### 3. 역할 분담
 
-> - 김동우 : 회원가입 / 로그인 기능 / Generative model 사용
-> - 김진수 : 추천 스타일 페이지
-> - 박진우 : 이미지 업로드 + 결과 페이지 (결과 페이지에서 저장을 누르면 히스토리에 저장됨)
-> - 최민기 : 히스토리(게시판) 페이지 / 좋아요 / 댓글 / 즐겨찾기 기능
+> - 김은하 : 메인화면, 필터링, 방 생성&삭제
+> - 강구용 : 로그인, 회원가입, 알람, 채팅
+> - 조하람 : 디자인, 화면 구현
+> - 황주원 : PROXY, DB 서버구축, 리팩토링, 상태관리
+> - 박문아 : 디자인, 화면 구현
 
-<br />
+### 4. 프로젝트 목표
 
-# 📚 기술 스택
+> 콜벤을 이용하는 사용자들을 연결하는 실시간 방 기반 커뮤니티 플랫폼 구축
 
-### Back-end
+# 📌주요 기능 및 담당 역할
 
-> python3  
-> Django  
-> Django-rest-framwork
+### 주요 기능
+> - 로그인, 회원가입, 방 생성/조회, 알림, 필터링, 자동 방 삭제
+> - 실시간 지도 기반 경로 안내, 조건별 방 필터링 기능
 
-<br />
+### 담당 역할 (김은하)
+> - 방 생성/조회 기능 전체 구현 (메인화면)
+> - 지도 경로 및 소요시간 표시 (Open Route Service API, Google Map API 활용)
+> - Supabase ➕ Cron ➕ Trigger 를 활용한 자동 방 삭제 로직 설계 및 구현
+> - 채팅 기능 및 방 조회 필터링 UI 일부 기능 및 디자인 구현
 
-# 📊 ERD
+# 💡 기술 스택
 
-<details>
-<summary>ERD</summary>
-<div markdown="1" style="padding-left: 15px;">
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a1b9badd-e923-4a82-abc8-6a72480a1f77/mylittleshoes_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220823T071050Z&X-Amz-Expires=86400&X-Amz-Signature=7023202f6ba7b54d834bb0d2cca9a9dfd7ce20d41727db6a98a07a62a8d4bfdc&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22mylittleshoes%2520%281%29.png%22&x-id=GetObject" width="800px"/>
-</div>
-</details>
+### Frontend
+> Expo, React Native (JS, TS, TSX, JSX)
 
-<br />
+### Backend
+> Node.js, Express
 
-# 🔑 구현 내용
+### Infra
+> ORACLE CLOUD, Nginx, Docker
 
-### 1. Serializer를 통한 회원가입 / 로그인 기능 구현
+### Database
+> Supabase, PostgreSQL
 
-> Sirailizer의 cumstom validate, create, update 사용  
-> [코드보러가기](https://github.com/kimphysicsman/mylittleshoes_backend/blob/1f7ca0fd899f14b9aedada4f46f716d207480da0/user/serializers.py#L9)
+### API
+> Google Maps, Open Route Service
 
+# ✨ 성과 및 배운점
+> - 애자일 방식으로 스프린트 단위로 개발 ➡ 팀 간 소통 및 효율적인 일정 관리 경험
+> - GitHub 를 통한 코드 리뷰 및 병합 ➡ 협업과 버전 관리 능력 향상
+> - Supabase, Expo 등 새로운 기술 스택 도입 ➡ 학습과 적용 능력 증명
+> - 실시간 위치 기반 기능과 자동 삭제 기능 구현 ➡ 사용자 편의성 향상 ➕ 유지관리 효율 확보
 
-<br />
+# 📑 레퍼런스
+> [GitHub](https://github.com/Macaping/PassengerTogether)
+> [시연 영상](https://youtube.com/shorts/n2gDlkTz28o?si=0rSK7s3AceBLoAME)
 
-### 2. Generative model 이용한 새로운 신발 스타일링 기능 구현
-
-> 이미지 두장 받아서 새로운 스타일의 이미지 만들어서 반환  
-> [코드보러가기](https://github.com/kimphysicsman/mylittleshoes_backend/blob/master/upload/views.py#L35)
-
-
-
-
-<br />
-
-# 📕 기타 자료
-
-### 1. 기획문서
-
-> [MyLittleShoes - Notion](https://www.notion.so/kimphysicsman/MLS-My-Little-Shoes-2d7eafdb6a514ae7a569f11cc04411e1)
-
-### 2. Generative model
-
-> [style-transfer-pytorch - Github](https://github.com/crowsonkb/style-transfer-pytorch)
-
-### 3. 발표영상
-
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p align="center"> 22.07.06 발표 </p>
-        <a href="https://www.youtube.com/watch?v=-UBy-KnmZs4" title="MyLittleShoes 발표">
-          <img align="center" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d3d05756-264f-4f13-bf98-8d823f012d02/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220823T073555Z&X-Amz-Expires=86400&X-Amz-Signature=ca1ce99ba02ee89c5986be87c819a9bb4f1d218329b5ee3da6dc81a6bfe7d1cf&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width="300" >
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
