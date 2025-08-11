@@ -53,18 +53,23 @@
 
 ### Frontend
 > Expo, React Native (JS, TS, TSX, JSX)
+</br>
 
 ### Backend
 > Node.js, Express
+</br>
 
 ### Infra
 > ORACLE CLOUD, Nginx, Docker
+</br>
 
 ### Database
 > Supabase, PostgreSQL
+</br>
 
 ### API
 > Google Maps, Open Route Service
+</br>
 
 # ✨ 성과 및 배운점
 > - 애자일 방식으로 스프린트 단위로 개발 ➡ 팀 간 소통 및 효율적인 일정 관리 경험
