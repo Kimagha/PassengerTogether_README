@@ -76,6 +76,7 @@
 > - GitHub 를 통한 코드 리뷰 및 병합 ➡ 협업과 버전 관리 능력 향상
 > - Supabase, Expo 등 새로운 기술 스택 도입 ➡ 학습과 적용 능력 증명
 > - 실시간 위치 기반 기능과 자동 삭제 기능 구현 ➡ 사용자 편의성 향상 ➕ 유지관리 효율 확보
+</br>
 
 # 📑 레퍼런스
 > [GitHub](https://github.com/Macaping/PassengerTogether) <br/>
