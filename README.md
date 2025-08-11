@@ -65,6 +65,6 @@
 > - 실시간 위치 기반 기능과 자동 삭제 기능 구현 ➡ 사용자 편의성 향상 ➕ 유지관리 효율 확보
 
 # 📑 레퍼런스
-> [GitHub](https://github.com/Macaping/PassengerTogether)
+> [GitHub](https://github.com/Macaping/PassengerTogether) <br/>
 > [시연 영상](https://youtube.com/shorts/n2gDlkTz28o?si=0rSK7s3AceBLoAME)
 
