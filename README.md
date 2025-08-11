@@ -53,19 +53,19 @@
 
 ### Frontend
 > Expo, React Native (JS, TS, TSX, JSX)
-</br>
+
 
 ### Backend
 > Node.js, Express
-</br>
+
 
 ### Infra
 > ORACLE CLOUD, Nginx, Docker
-</br>
+
 
 ### Database
 > Supabase, PostgreSQL
-</br>
+
 
 ### API
 > Google Maps, Open Route Service
